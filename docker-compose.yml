@@ -1,0 +1,14 @@
+services:
+  email-app:
+    container_name: email_app
+    image: node:16
+    working_dir: /usr/app
+    environment:
+      - MAIL_USER=${MAIL_USER}
+      - MAIL_PASS=${MAIL_PASS}
+    command: bash
+    volumes:
+      - ./:/usr/app
+    # As duas opções abaixo correspondem ao -it
+    tty: true # -t
+    stdin_open: true #-i

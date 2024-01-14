@@ -1,1 +1,5 @@
-console.log('testefs');
+async function main() {
+  console.log('Hello World');
+}
+
+main();

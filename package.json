@@ -2,10 +2,9 @@
   "name": "nodemailer",
   "version": "1.0.0",
   "description": "Projeto para aprender a enviar e-mails usando o módulo do Nodemailer.",
-  "main": "index.js",
+  "main": "./dist/src/index.js",
   "scripts": {
-    "start": "node ./dist/src/index.js",
-    "build": "tsc"
+    "start": "tsx src/index.ts"
   },
   "keywords": [],
   "author": "",
@@ -16,6 +15,7 @@
   "devDependencies": {
     "@types/node": "^20.11.0",
     "@types/nodemailer": "^6.4.14",
+    "tsx": "^4.7.0",
     "typescript": "^5.3.3"
   }
 }
